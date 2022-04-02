@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Prerequisites:
+You need to have NVM installed. If you are on a Mac and you have Homebrew installed you can get this installed with brew install nvm. Once
 
-## Getting Started
+ installed run nvm install --lts and nvm use --lts.
 
-First, run the development server:
+Project Init:
+Once you have the repository cloned there are a few commands you will need to run to get things up and running...
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+If NVM was installed via Homebrew you should simply be able to run ./init.sh in a terminal while within the project directory.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you installed it via some other means you will need to run each command individually. There are only six commands so it shouldn't take long
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Assets:
+If there are static assets that need to be included in a deploy they should be placed within the public/ folder. Typically the only file types 
+that should be added are images and fonts. CSS is handled via Next.JS. For info on how we handle
