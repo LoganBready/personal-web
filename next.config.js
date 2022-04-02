@@ -1,6 +1,27 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+/* eslint-disable no-undef */
 
-module.exports = nextConfig
+module.exports = {
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(graphql|gql)$/,
+      exclude: /node_modules/,
+      loader: 'graphql-tag/loader',
+    });
+    return config;
+  },
+
+  webpackDevMiddleware: (config) => {
+    return config;
+  },
+
+  async redirects() {
+    // You can populate this with redirects as required
+    return [
+      // {
+      // 	source: '/',
+      // 	destination: '/campaigns',
+      // 	permanent: false,
+      // },
+    ];
+  },
+};

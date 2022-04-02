@@ -1,0 +1,8 @@
+# Add files / directories here to ignore them/.next
+/build
+/coverage
+/dist
+/node_modules
+/out
+/public
+reset.scss

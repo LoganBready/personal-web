@@ -1,24 +1,65 @@
 {
-  "name": "personal-web",
+  "name": "next-bootstrap",
   "version": "0.1.0",
   "private": true,
+  "description": "Next.js Bootstrap",
+  "author": "Logan Bready",
+  "keywords": [
+    "nextjs"
+  ],
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
+    "clean:full": "rm -rf .next node_modules",
+    "clean:modules": "rm -rf node_modules && npm i",
+    "clean": "rm -rf .next",
+    "dev": "next dev",
+    "init": "./init.sh",
+    "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "postinstall": "husky install",
+    "prepare": "husky install",
+    "prettify": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss}\" \"!.next/**\" \"!node_modules/**\" \"!public/**\"",
     "start": "next start",
-    "lint": "next lint"
+    "stylelint:fix": "stylelint \"**/*.{css,scss}\" \"!.next/**\" \"!node_modules/**\" \"!public/**\" --fix",
+    "test:watch": "jest --watchAll",
+    "test": "jest"
   },
   "dependencies": {
+    "graphql": "^16.3.0",
     "next": "12.1.4",
+    "normalize.css": "^8.0.1",
+    "open-props": "^1.3.12",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "recoil": "^0.7.0",
+    "sass": "^1.49.11"
   },
   "devDependencies": {
+    "@testing-library/react": "^13.0.0",
+    "@types/jest": "^27.4.1",
     "@types/node": "17.0.23",
     "@types/react": "17.0.43",
     "@types/react-dom": "17.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.0",
+    "eslint-import-resolver-typescript": "^2.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^25.0.0",
+    "ts-jest": "^27.1.4",
     "typescript": "4.6.3"
   }
 }

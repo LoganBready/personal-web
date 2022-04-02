@@ -1,0 +1,120 @@
+@use '../../styles/media-queries' as media;
+
+.TodoWrapper {
+  background: #e8e8e8;
+  margin: 0 auto;
+  padding: var(--size-8);
+}
+
+.TodoList {
+  width: 100%;
+}
+
+.Todo {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: var(--size-5);
+  padding: var(--size-5);
+  position: relative;
+}
+
+.TodoText {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+
+  input {
+    border: 0;
+    border-bottom: 1px solid var(--gray-9);
+    font-size: 1.4rem;
+    padding: var(--size-3) var(--size-5) var(--size-3) 0;
+    width: 90%;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.IsCompleted {
+  &:after {
+    color: var(--green-8);
+    content: '\2713';
+    padding-left: var(--size-2);
+  }
+}
+
+.CompleteTodo {
+  background-color: var(--body-background-color);
+  border: 2px solid var(--body-color);
+  color: var(--body-color);
+  padding: var(--size-3) var(--size-5);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--body-color);
+    color: var(--body-background-color);
+    outline: 0;
+  }
+}
+
+.RemoveTodo {
+  background-color: var(--body-background-color);
+  border: 2px solid var(--body-color);
+  color: var(--body-color);
+  margin-left: var(--size-2);
+  padding: var(--size-3) var(--size-5);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--body-color);
+    color: var(--body-background-color);
+    outline: 0;
+  }
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.TodoFormInput {
+  background-color: var(--body-background-color);
+  border: 2px solid var(--body-color);
+  color: var(--body-color);
+  padding: var(--size-3) var(--size-5);
+  width: 100%;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@include media.sm-max {
+  .TodoText {
+    input {
+      width: 100%;
+    }
+  }
+
+  .ButtonWrapper {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--size-5);
+    width: 100%;
+  }
+}
+
+@include media.md-min {
+  .TodoWrapper {
+    min-width: 600px;
+  }
+}

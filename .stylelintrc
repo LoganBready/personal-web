@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "max-nesting-depth": 2,
+    "no-descending-specificity": null,
+    "order/properties-alphabetical-order": true,
+    "selector-class-pattern": "^[A-Z][a-zA-Z0-9]+$",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global"
+        ]
+      }
+    ],
+    "selector-pseudo-element-colon-notation": "single"
+  }
+}

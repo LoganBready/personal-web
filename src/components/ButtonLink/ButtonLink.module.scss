@@ -1,0 +1,14 @@
+.ButtonLink {
+  background-color: var(--body-background-color);
+  border: 2px solid var(--body-color);
+  color: var(--body-color);
+  padding: var(--size-3) var(--size-5);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    background-color: var(--body-color);
+    color: var(--body-background-color);
+  }
+}

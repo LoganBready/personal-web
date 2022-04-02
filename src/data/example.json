@@ -1,0 +1,24 @@
+{
+  "layout": {
+    "openGraph": {
+      "title": "Example Page"
+    }
+  },
+  "example": {
+    "text": ""
+  },
+  "todos": [
+    {
+      "text": "Item one",
+      "isCompleted": false
+    },
+    {
+      "text": "Item two",
+      "isCompleted": false
+    },
+    {
+      "text": "Item three",
+      "isCompleted": false
+    }
+  ]
+}

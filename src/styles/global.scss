@@ -1,0 +1,176 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable no-invalid-position-at-import-rule */
+@use './media-queries' as media;
+//////////////////////////////////////////////////////////
+// Global Styles //
+//////////////////////////////////////////////////////////
+// Use Open-Props from NPM package //
+@import 'open-props/style';
+// Use Normalize from NPM package //
+@import 'normalize.css';
+// Use Reset from import //
+@import './reset';
+//////////////////////////////////////////////////////////
+// Fonts //
+//////////////////////////////////////////////////////////
+// font-family: 'Roboto Slab', serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// font-family: 'Roboto', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// font-family: 'Roboto Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+//////////////////////////////////////////////////////////
+// CSS Variables //
+//////////////////////////////////////////////////////////
+:root {
+  //////////////////////////////////////////////////////////
+  // Brand Colors // https://colordesigner.io/
+  // primary
+  --brand-primary-1: #f8f2e4;
+  --brand-primary-2: #f2e5c9;
+  --brand-primary-3: #ebd9af;
+  --brand-primary-4: #e5cc94;
+  --brand-primary-5: #debf79;
+  //////////////////////////////////////////////////////////
+  // Typeface //
+  --font-family-serif: 'Roboto Slab', serif;
+  --font-family-sans: 'Roboto', sans-serif;
+  --font-family-mono: 'Roboto Mono', monospace;
+  --font-color-primary: var(--gray-9);
+  --font-color-secondary: var(--gray-6);
+  //////////////////////////////////////////////////////////
+  // Theme //
+  --body-background-color: #fff;
+  --body-color: #000;
+  //////////////////////////////////////////////////////////
+}
+
+//////////////////////////////////////////////////////////
+// Global Defaults
+//////////////////////////////////////////////////////////
+html,
+body {
+  font-family: var(--font-sans);
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--body-background-color);
+  color: var(--body-color);
+  font-family: var(--font-family-sans);
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+h1,
+.h1 {
+  font-size: 6rem;
+  font-weight: 300;
+  letter-spacing: -1.5px;
+
+  @include media.md-min {
+    font-size: 9.6rem;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 5.2rem;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+
+  @include media.md-min {
+    font-size: 6rem;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+
+  @include media.md-min {
+    font-size: 4.8rem;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 3.4rem;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+h5,
+.h5 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+h6,
+.h6 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
+
+:is(p, ul, ol, dl, label, input) {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button,
+.button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+section {
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+}
+
+.container_fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+
+  @include media.sm-min {
+    max-width: 540px;
+  }
+
+  @include media.md-min {
+    max-width: 720px;
+  }
+
+  @include media.lg-min {
+    max-width: 960px;
+  }
+
+  @include media.xl-min {
+    max-width: 1140px;
+  }
+
+  @include media.xxl-min {
+    max-width: 1320px;
+  }
+}

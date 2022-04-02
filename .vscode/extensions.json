@@ -1,0 +1,25 @@
+{
+    "recommendations": [
+      "apollographql.vscode-apollo",
+      "christian-kohler.npm-intellisense",
+      "dbaeumer.vscode-eslint",
+      "deque-systems.vscode-axe-linter",
+      "docsmsft.docs-authoring-pack",
+      "dsznajder.es7-react-js-snippets",
+      "eamodio.gitlens",
+      "editorconfig.editorconfig",
+      "eg2.vscode-npm-script",
+      "esbenp.prettier-vscode",
+      "exodiusstudios.comment-anchors",
+      "formulahendry.auto-complete-tag",
+      "github.vscode-pull-request-github",
+      "graphql.vscode-graphql",
+      "jock.svg",
+      "mikestead.dotenv",
+      "orta.vscode-jest",
+      "pflannery.vscode-versionlens",
+      "rangav.vscode-thunder-client",
+      "stylelint.vscode-stylelint",
+      "usernamehw.errorlens"
+    ]
+  }
