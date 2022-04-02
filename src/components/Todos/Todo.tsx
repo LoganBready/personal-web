@@ -1,10 +1,10 @@
 // state
 import { useRecoilState } from 'recoil';
-import { TodosAtom } from './TodosAtom';
+// import { TodosAtom } from './TodosAtom';
 // interface
-import type { ITodo } from './ITodo';
+// import type { ITodo } from './ITodo';
 // styles
-import styles from './Todos.module.scss';
+// import styles from './Todos.module.scss';
 
 // export const Todo = ({ index, isCompleted, text }: ITodo) => {
 //   const [todos, setTodos] = useRecoilState(TodosAtom);

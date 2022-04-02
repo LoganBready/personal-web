@@ -2,7 +2,7 @@
 import { useState } from 'react';
 // state
 import { useRecoilState } from 'recoil';
-import { TodosAtom } from './TodosAtom';
+// import { TodosAtom } from './TodosAtom';
 // styles
 import styles from './Todos.module.scss';
 

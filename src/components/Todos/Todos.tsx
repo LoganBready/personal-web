@@ -1,9 +1,9 @@
 // state
 import { useRecoilValue } from 'recoil';
-import { TodosAtom } from './TodosAtom';
+// import { TodosAtom } from './TodosAtom';
 // components
-import { Todo } from './Todo';
-import { TodoForm } from './TodoForm';
+// import { Todo } from './Todo';
+// import { TodoForm } from './TodoForm';
 // styles
 import styles from './Todos.module.scss';
 
