@@ -1,5 +1,5 @@
 Prerequisites:
-You need to have NVM installed. If you are on a Mac and you have Homebrew installed you can get this installed with brew install nvm. Once
+You need to have NVM installed. If you are on a Mac and you have Homebrew installed you can get this installed with brew install nvm.
 
  installed run nvm install --lts and nvm use --lts.
 
