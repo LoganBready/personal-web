@@ -7,21 +7,21 @@ import { TodoForm } from './TodoForm';
 // styles
 import styles from './Todos.module.scss';
 
-export const Todos = () => {
-  const todos = useRecoilValue(TodosAtom);
+// export const Todos = () => {
+//   const todos = useRecoilValue(TodosAtom);
 
-  return (
-    <section>
-      <div className='container'>
-        <div className={styles.TodoWrapper}>
-          <ul className={styles.TodoList}>
-            {todos?.map(({ text, isCompleted }, index) => (
-              <Todo text={text} isCompleted={isCompleted} index={index} key={index} />
-            ))}
-          </ul>
-          <TodoForm />
-        </div>
-      </div>
-    </section>
-  );
-};
+//   return (
+//     <section>
+//       <div className='container'>
+//         <div className={styles.TodoWrapper}>
+//           <ul className={styles.TodoList}>
+//             {todos?.map(({ text, isCompleted }, index) => (
+//               <Todo text={text} isCompleted={isCompleted} index={index} key={index} />
+//             ))}
+//           </ul>
+//           <TodoForm />
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
